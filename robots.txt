@@ -1,0 +1,5 @@
+# SwipeThisCard — allow all crawlers (search + AI answer engines)
+User-agent: *
+Allow: /
+
+Sitemap: https://swipethiscard.com/sitemap.xml

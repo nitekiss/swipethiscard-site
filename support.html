@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Support and answers for SwipeThisCard — the app that tells you which card to swipe for the most interest-free days.">
+<link rel="canonical" href="https://swipethiscard.com/support">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SwipeThisCard Support">
+<meta property="og:description" content="Support and answers for SwipeThisCard — the app that tells you which card to swipe for the most interest-free days.">
+<meta property="og:url" content="https://swipethiscard.com/support">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>SwipeThisCard Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ink:#0D1B2A; --ink-2:#14273A;
+  --paper:#F3F6F9; --paper-2:#E7ECF1; --surface:#FFFFFF;
+  --blue:#0072B2; --amber:#E69F00; --sky:#56B4E9; --verm:#D55E00;
+  --ash:#5A6672; --ash-2:#C3CCD5;
+  --on-ink:#E9EEF3; --on-ink-dim:#A8B8C6;
+  --text:#0D1B2A; --text-2:#4A5B6B; --line:#D8E0E8;
+  --accent:#0072B2;
+  --display:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0A1521; --paper-2:#122032; --surface:#14273A;
+  --text:#E9EEF3; --text-2:#A8B8C6; --line:#24394F;
+  --ink:#061019; --ink-2:#0E1E2E; --ash:#9BAAB8; --ash-2:#3A4E62;
+  --accent:#56B4E9;
+}}
+:root[data-theme="dark"]{
+  --paper:#0A1521; --paper-2:#122032; --surface:#14273A;
+  --text:#E9EEF3; --text-2:#A8B8C6; --line:#24394F;
+  --ink:#061019; --ink-2:#0E1E2E; --ash:#9BAAB8; --ash-2:#3A4E62;
+  --accent:#56B4E9;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--display);font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto;padding:0 24px}
+h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.025em;text-wrap:balance}
+h1{font-size:clamp(32px,5.4vw,48px);line-height:1.05;letter-spacing:-.035em}
+h2{font-size:clamp(22px,3vw,29px);line-height:1.15}
+h3{font-size:17px;letter-spacing:-.012em;line-height:1.35}
+p{margin:0}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)}
+.sm{font-size:14.5px;color:var(--text-2)}
+.xs{font-size:12.5px;color:var(--ash)}
+code{font-family:var(--mono);font-size:13.5px;background:var(--paper-2);padding:1px 5px;border-radius:4px}
+
+/* nav */
+nav{border-bottom:1px solid var(--line);background:var(--surface)}
+.nav-in{max-width:940px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+.brand span{font-weight:700;font-size:16px;letter-spacing:-.028em}
+.nav-links{display:flex;gap:20px;font-size:14px}
+.nav-links a{color:var(--text-2);text-decoration:none}
+.nav-links a:hover{color:var(--accent)}
+
+/* hero */
+.hero{padding:56px 0 40px}
+.hero h1{margin:14px 0 14px;max-width:16ch}
+.hero p{font-size:18px;color:var(--text-2);max-width:58ch}
+
+/* contact card */
+.contact{display:grid;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);margin-bottom:14px}
+@media(min-width:760px){.contact{grid-template-columns:1.35fr 1fr}}
+.contact-main{padding:26px 26px 28px}
+.contact-side{padding:26px;background:var(--paper-2);border-top:1px solid var(--line)}
+@media(min-width:760px){.contact-side{border-top:0;border-left:1px solid var(--line)}}
+.mailto{display:inline-flex;align-items:center;gap:9px;margin-top:14px;font-family:var(--mono);font-size:17px;font-weight:500;color:var(--accent);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px;word-break:break-all}
+.mailto:hover{opacity:.8}
+.facts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:9px}
+.facts li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:9px;align-items:start;font-size:14px;color:var(--text-2)}
+.facts svg{width:16px;height:16px;margin-top:3px;flex:none}
+
+/* include block */
+.include{border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:0 10px 10px 0;background:var(--surface);padding:22px 24px;margin-top:28px}
+.include ol{margin:12px 0 0;padding-left:20px;display:grid;gap:7px;font-size:14.5px;color:var(--text-2)}
+.include ol b{color:var(--text);font-weight:600}
+
+/* sections */
+section{padding:52px 0;border-top:1px solid var(--line)}
+.sec-lead{max-width:60ch;margin:10px 0 26px;color:var(--text-2)}
+
+/* faq */
+.faq{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
+details{border-bottom:1px solid var(--line)}
+details:last-child{border-bottom:0}
+summary{cursor:pointer;list-style:none;padding:17px 22px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;font-weight:500;font-size:15.5px;letter-spacing:-.008em}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:var(--paper-2)}
+.chev{width:14px;height:14px;color:var(--ash);transition:transform .18s ease}
+details[open] .chev{transform:rotate(90deg)}
+details[open] summary{background:var(--paper-2)}
+.ans{padding:4px 22px 22px;font-size:14.8px;color:var(--text-2);max-width:66ch}
+.ans p+p{margin-top:10px}
+.ans ul{margin:10px 0 0;padding-left:19px;display:grid;gap:6px}
+@media(prefers-reduced-motion:reduce){.chev{transition:none}}
+
+/* status pills */
+.pillrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:5px 11px 5px 9px;border-radius:99px;font-size:13px;font-weight:500;background:var(--paper-2);border:1px solid var(--line);color:var(--text)}
+
+/* privacy strip */
+.strip{background:var(--ink);color:var(--on-ink);border-radius:12px;padding:28px 26px}
+.strip h2{color:#fff}
+.strip p{color:var(--on-ink-dim);max-width:60ch;margin-top:10px;font-size:15px}
+.strip a{color:var(--sky)}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--ash);font-size:13px}
+.foot-in{display:grid;gap:18px}
+@media(min-width:760px){.foot-in{grid-template-columns:1.4fr 1fr;align-items:start}}
+.foot-links{display:flex;flex-wrap:wrap;gap:16px}
+.foot-links a{color:var(--text-2);text-decoration:none}
+.foot-links a:hover{color:var(--accent)}
+.legal{max-width:62ch;line-height:1.55}
+</style>
+</head>
+<body>
+<nav><div class="nav-in">
+  <a class="brand" href="/">
+    <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true"><g transform="rotate(9 32 32)"><rect x="13" y="19" width="38" height="27" rx="5.5" fill="#E69F00"/></g><g transform="rotate(-8 32 32)"><rect x="13" y="21" width="38" height="27" rx="5.5" fill="#0072B2"/><rect x="18.5" y="27" width="9" height="6.5" rx="1.8" fill="#0D1B2A" opacity=".5"/></g></svg>
+    <span>SwipeThisCard</span>
+  </a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/privacy">Privacy</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Support</div>
+    <h1>Something off? Write to a person.</h1>
+    <p>There is no ticket portal, no chatbot and no help-desk vendor sitting between you and an answer — that would mean handing your message to a third party, which is the one thing this app is built not to do.</p>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="contact-main">
+      <h3>Email support</h3>
+      <p class="sm" style="margin-top:6px">The fastest route is straight from inside the app: <b>Settings → Contact support</b>. It opens your own Mail app with a message already written, including your iOS version and app build — nothing about your cards.</p>
+      <a class="mailto" href="mailto:hello@swipethiscard.com">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="16" height="12" rx="2.5"/><path d="M2.6 5.6L10 11l7.4-5.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        hello@swipethiscard.com
+      </a>
+      <p class="xs" style="margin-top:12px">Written in English or Turkish, either is fine.</p>
+    </div>
+    <div class="contact-side">
+      <div class="eyebrow">What happens next</div>
+      <ul class="facts">
+        <li><svg viewBox="0 0 16 16" fill="none" stroke="#0072B2" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="8" r="6.8"/><path d="M8 4.3V8l2.6 1.7" stroke-linecap="round"/></svg><span>A reply within one business day.</span></li>
+        <li><svg viewBox="0 0 16 16" fill="none" stroke="#0072B2" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="5.4" r="2.8"/><path d="M2.6 13.4a5.4 5.4 0 0110.8 0" stroke-linecap="round"/></svg><span>Read by a person, not routed by a bot.</span></li>
+        <li><svg viewBox="0 0 16 16" fill="none" stroke="#0072B2" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="10" height="6.6" rx="1.8"/><path d="M5.4 7V5.2a2.6 2.6 0 015.2 0V7" stroke-linecap="round"/></svg><span>Your message never leaves that mailbox.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="include">
+    <h3>To get a real answer in one round trip</h3>
+    <p class="sm" style="margin-top:6px">Float questions are almost always arithmetic questions, and arithmetic is checkable. Send these four things and the reply can actually resolve it:</p>
+    <ol>
+      <li><b>The card, as the app names it</b> — issuer, card name, last four. For example, Chase · Sapphire Preferred ··4417.</li>
+      <li><b>The two dates you entered</b> — the statement closing day and the payment due day.</li>
+      <li><b>The number the app showed</b>, and the number you expected.</li>
+      <li><b>A screenshot</b>, if a screen looks wrong rather than a number.</li>
+    </ol>
+    <p class="xs" style="margin-top:14px">Never send a full card number, a CVV, a PIN or a bank login — not to us, not to anyone. The app has no field for them and support has no use for them.</p>
+  </div>
+</div>
+
+<section><div class="wrap">
+  <div class="eyebrow">Common questions</div>
+  <h2 style="margin-top:10px">Answers before you write</h2>
+  <p class="sec-lead">Most messages come down to one of these eight.</p>
+
+  <div class="faq">
+    <details open>
+      <summary>The float number looks wrong for one of my cards.<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="ans">
+        <p>Float is counted from the day you buy to the day the statement carrying that purchase is due. It is not "days until my next payment", which is the number most people have in their head.</p>
+        <p>Two things produce nearly every mismatch. First, a purchase made <em>on</em> the closing day usually lands on the statement that just closed, not the next one — so it gets the short float, not the long one. Second, the closing day and the due day have to be the ones your issuer actually uses; if you typed the day you happen to pay rather than the printed due date, every number downstream shifts.</p>
+        <p><b>Open the card, check the two dates against your paper statement, and correct them there.</b> The statement always wins.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Does the app connect to my bank?<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="ans">
+        <p>No, and it never will. There is no login, no linked account, no aggregator and no read-only bank connection. You type a handful of facts off your statement — issuer, card name, last four digits, closing day, due day — and the arithmetic runs on your phone.</p>
+        <p>That is also why nothing syncs automatically: the app has no way to know your bank changed a date. When a date changes, you change it.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I add or edit a card?<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="ans">
+        <p><b>Cards → +</b> to add. Tap any card to edit it.</p>
+        <p>Pick your card from the built-in catalog and the static facts — network, reward type, annual fee — fill themselves in. Anything not in the catalog you can type by hand. The only things you supply either way are the last four digits and the two dates.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>My cards did not appear on my other device.<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="ans">
+        <p>Sync runs through your own iCloud account, not through any server of ours — so the usual three checks apply:</p>
+        <ul>
+          <li>Both devices signed in to the <em>same</em> Apple Account.</li>
+          <li><b>Settings → Apple Account → iCloud → iCloud Drive</b> switched on.</li>
+          <li>SwipeThisCard allowed under that same iCloud list.</li>
+        </ul>
+        <p>A first sync after a fresh install can take a few minutes and needs the app open and the device on Wi-Fi. If it still has not arrived after that, write in — that one is worth looking at.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What happens to my cards if I stop paying?<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="ans">
+        <p>Nothing is deleted. Ever. Your cards stay exactly where they are.</p>
+        <p>The free tier shows two cards, so if you were holding more than two, the extras become read-only until you subscribe again — still there, still yours, still on your device and in your iCloud. Resubscribe and they are live again the moment the purchase clears.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I want a refund.<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="ans">
+        <p>Refunds go through Apple, not through us — every purchase is an App Store purchase and we never see your payment details. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, or from <b>Settings → your name → Media &amp; Purchases → Purchase History</b> on your iPhone.</p>
+        <p>To cancel a subscription: <b>Settings → your name → Subscriptions</b>. It keeps working until the period you already paid for runs out.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Can you see my cards, or recover them if I lose my phone?<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="ans">
+        <p>No to both, and the second is the price of the first. We hold no copy of your data because there is no server holding anything — so there is nothing for us to look up, hand over, or lose.</p>
+        <p>Your backup is your own iCloud. Sign in to the same Apple Account on a new device, install the app, and your cards come back from it.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>A card's details in the catalog are out of date.<svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3.5L10.5 8 6 12.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="ans">
+        <p>Worth telling us — send the card name and what changed, and it goes into the next catalog update.</p>
+        <p>In the meantime you can simply edit the card on your device; anything you type by hand overrides the catalog and stays that way.</p>
+      </div>
+    </details>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="strip">
+    <div class="eyebrow" style="color:#56B4E9">Privacy</div>
+    <h2 style="margin-top:10px">Writing to support does not change what we know about you.</h2>
+    <p>The app composes the message; your own Mail app sends it. Nothing is transmitted by SwipeThisCard itself, and the message carries only your iOS version and the app build — never a card, never a date, never a balance.</p>
+    <p>After that it is an ordinary email in an ordinary inbox, read by a person and kept only as long as the conversation needs it. The full policy is on the <a href="/privacy">privacy page</a>.</p>
+    <div class="pillrow">
+      <span class="pill"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#56B4E9" stroke-width="1.9" aria-hidden="true"><circle cx="8" cy="8" r="6.8"/><path d="M4.8 8.2l2.2 2.2 4.2-4.6" stroke-linecap="round" stroke-linejoin="round"/></svg>No accounts</span>
+      <span class="pill"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#56B4E9" stroke-width="1.9" aria-hidden="true"><circle cx="8" cy="8" r="6.8"/><path d="M4.8 8.2l2.2 2.2 4.2-4.6" stroke-linecap="round" stroke-linejoin="round"/></svg>No tracking</span>
+      <span class="pill"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#56B4E9" stroke-width="1.9" aria-hidden="true"><circle cx="8" cy="8" r="6.8"/><path d="M4.8 8.2l2.2 2.2 4.2-4.6" stroke-linecap="round" stroke-linejoin="round"/></svg>No third-party support desk</span>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><div class="foot-in">
+  <div>
+    <div class="foot-links" style="margin-bottom:14px">
+      <a href="/">Home</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a>
+    </div>
+    <p class="legal">SwipeThisCard is an educational tool for understanding credit-card billing cycles. It is not financial advice, and it does not recommend borrowing, spending, or any particular card. Your statement is always the authority.</p>
+  </div>
+  <div>
+    <p class="legal">Card names and issuer names are trademarks of their respective owners, used here only to identify those products. SwipeThisCard is not affiliated with, endorsed by, or sponsored by any issuer.</p>
+    <p style="margin-top:12px">&copy; 2027 SwipeThisCard</p>
+  </div>
+</div></div></footer>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — SwipeThisCard</title>
+<meta name="description" content="How SwipeThisCard and swipethiscard.com handle data: no accounts, no bank connection, no server-side storage of card data, and what the website itself collects.">
+<link rel="canonical" href="https://swipethiscard.com/privacy">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy Policy — SwipeThisCard">
+<meta property="og:description" content="How SwipeThisCard and swipethiscard.com handle data: no accounts, no bank connection, no server-side storage of card data, and what the website itself collects.">
+<meta property="og:url" content="https://swipethiscard.com/privacy">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ink:#0D1B2A; --ink-2:#14273A;
+  --paper:#F3F6F9; --paper-2:#E7ECF1; --surface:#FFFFFF;
+  --blue:#0072B2; --amber:#E69F00; --sky:#56B4E9; --verm:#D55E00;
+  --ash:#5A6672; --ash-2:#C3CCD5;
+  --on-ink:#E9EEF3; --on-ink-dim:#A8B8C6;
+  --text:#0D1B2A; --text-2:#4A5B6B; --line:#D8E0E8;
+  --accent:#0072B2;
+  --display:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0A1521; --paper-2:#122032; --surface:#14273A;
+  --text:#E9EEF3; --text-2:#A8B8C6; --line:#24394F;
+  --ink:#061019; --ink-2:#0E1E2E; --ash:#9BAAB8; --ash-2:#3A4E62;
+  --accent:#56B4E9;
+}}
+:root[data-theme="dark"]{
+  --paper:#0A1521; --paper-2:#122032; --surface:#14273A;
+  --text:#E9EEF3; --text-2:#A8B8C6; --line:#24394F;
+  --ink:#061019; --ink-2:#0E1E2E; --ash:#9BAAB8; --ash-2:#3A4E62;
+  --accent:#56B4E9;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--display);font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto;padding:0 24px}
+h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.025em;text-wrap:balance}
+h1{font-size:clamp(32px,5.4vw,48px);line-height:1.05;letter-spacing:-.035em}
+h2{font-size:clamp(22px,3vw,29px);line-height:1.15}
+h3{font-size:17px;letter-spacing:-.012em;line-height:1.35}
+p{margin:0}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)}
+.sm{font-size:14.5px;color:var(--text-2)}
+.xs{font-size:12.5px;color:var(--ash)}
+code{font-family:var(--mono);font-size:13.5px;background:var(--paper-2);padding:1px 5px;border-radius:4px}
+
+/* nav */
+nav{border-bottom:1px solid var(--line);background:var(--surface)}
+.nav-in{max-width:940px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+.brand span{font-weight:700;font-size:16px;letter-spacing:-.028em}
+.nav-links{display:flex;gap:20px;font-size:14px}
+.nav-links a{color:var(--text-2);text-decoration:none}
+.nav-links a:hover{color:var(--accent)}
+
+/* hero */
+.hero{padding:56px 0 40px}
+.hero h1{margin:14px 0 14px;max-width:16ch}
+.hero p{font-size:18px;color:var(--text-2);max-width:58ch}
+
+/* contact card */
+.contact{display:grid;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);margin-bottom:14px}
+@media(min-width:760px){.contact{grid-template-columns:1.35fr 1fr}}
+.contact-main{padding:26px 26px 28px}
+.contact-side{padding:26px;background:var(--paper-2);border-top:1px solid var(--line)}
+@media(min-width:760px){.contact-side{border-top:0;border-left:1px solid var(--line)}}
+.mailto{display:inline-flex;align-items:center;gap:9px;margin-top:14px;font-family:var(--mono);font-size:17px;font-weight:500;color:var(--accent);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px;word-break:break-all}
+.mailto:hover{opacity:.8}
+.facts{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:9px}
+.facts li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:9px;align-items:start;font-size:14px;color:var(--text-2)}
+.facts svg{width:16px;height:16px;margin-top:3px;flex:none}
+
+/* include block */
+.include{border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:0 10px 10px 0;background:var(--surface);padding:22px 24px;margin-top:28px}
+.include ol{margin:12px 0 0;padding-left:20px;display:grid;gap:7px;font-size:14.5px;color:var(--text-2)}
+.include ol b{color:var(--text);font-weight:600}
+
+/* sections */
+section{padding:52px 0;border-top:1px solid var(--line)}
+.sec-lead{max-width:60ch;margin:10px 0 26px;color:var(--text-2)}
+
+/* faq */
+.faq{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
+details{border-bottom:1px solid var(--line)}
+details:last-child{border-bottom:0}
+summary{cursor:pointer;list-style:none;padding:17px 22px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;font-weight:500;font-size:15.5px;letter-spacing:-.008em}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:var(--paper-2)}
+.chev{width:14px;height:14px;color:var(--ash);transition:transform .18s ease}
+details[open] .chev{transform:rotate(90deg)}
+details[open] summary{background:var(--paper-2)}
+.ans{padding:4px 22px 22px;font-size:14.8px;color:var(--text-2);max-width:66ch}
+.ans p+p{margin-top:10px}
+.ans ul{margin:10px 0 0;padding-left:19px;display:grid;gap:6px}
+@media(prefers-reduced-motion:reduce){.chev{transition:none}}
+
+/* status pills */
+.pillrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:5px 11px 5px 9px;border-radius:99px;font-size:13px;font-weight:500;background:var(--paper-2);border:1px solid var(--line);color:var(--text)}
+
+/* privacy strip */
+.strip{background:var(--ink);color:var(--on-ink);border-radius:12px;padding:28px 26px}
+.strip h2{color:#fff}
+.strip p{color:var(--on-ink-dim);max-width:60ch;margin-top:10px;font-size:15px}
+.strip a{color:var(--sky)}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--ash);font-size:13px}
+.foot-in{display:grid;gap:18px}
+@media(min-width:760px){.foot-in{grid-template-columns:1.4fr 1fr;align-items:start}}
+.foot-links{display:flex;flex-wrap:wrap;gap:16px}
+.foot-links a{color:var(--text-2);text-decoration:none}
+.foot-links a:hover{color:var(--accent)}
+.legal{max-width:62ch;line-height:1.55}
+</style>
+</head>
+<body>
+<nav><div class="nav-in">
+  <a class="brand" href="/">
+    <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true"><g transform="rotate(9 32 32)"><rect x="13" y="19" width="38" height="27" rx="5.5" fill="#E69F00"/></g><g transform="rotate(-8 32 32)"><rect x="13" y="21" width="38" height="27" rx="5.5" fill="#0072B2"/><rect x="18.5" y="27" width="9" height="6.5" rx="1.8" fill="#0D1B2A" opacity=".5"/></g></svg>
+    <span>SwipeThisCard</span>
+  </a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/support">Support</a>
+  </div>
+</div></nav>
+<div class="wrap">
+  <div class="hero" style="padding:40px 0 8px">
+    <div class="eyebrow">Privacy</div>
+    <h1 style="max-width:20ch">Privacy Policy</h1>
+    <p class="sm" style="margin-top:10px">Last updated: [effective date] &middot; Applies to the SwipeThisCard app and this website.</p>
+  </div>
+</div>
+<div class="wrap">
+  <div class="strip" style="margin:0 0 8px;background:var(--surface);color:var(--text);border:1px solid var(--line)">
+    <div class="eyebrow" style="color:var(--verm)">Draft &mdash; not yet in effect</div>
+    <p style="color:var(--text-2);margin-top:8px">This page has not been reviewed by counsel and is not the live policy. Bracketed items still need a decision: the legal entity name, the jurisdiction for disputes, and the effective date. Do not treat this as binding until those are filled in and this notice is removed.</p>
+  </div>
+</div>
+<div class="wrap">
+
+  <section style="border-top:0;padding-top:36px">
+    <h2>The short version</h2>
+    <p class="sec-lead">SwipeThisCard was built so there would be nothing here to write. There is no account, no server, and no tracking in the app. This policy exists mainly to say that plainly, and to cover the one thing on this website that does collect something: an email address, if you ask us for one.</p>
+    <div class="pillrow">
+      <span class="pill">No accounts</span>
+      <span class="pill">No bank connection</span>
+      <span class="pill">No analytics SDKs</span>
+      <span class="pill">No ad trackers</span>
+      <span class="pill">No data sold, ever</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>What the app stores</h2>
+    <p class="sec-lead">Everything you enter into SwipeThisCard stays on your device and, if you have iCloud enabled, syncs through your own private iCloud account &mdash; the same way Notes or Reminders does. We do not operate a server that receives, stores, or can read this data.</p>
+    <div class="include">
+      <div class="eyebrow" style="color:var(--verm)">Never collected, under any circumstance</div>
+      <ol>
+        <li><b>Full card numbers, CVVs, or PINs.</b> The app never asks for one.</li>
+        <li><b>Bank logins or account credentials.</b> There is no bank connection of any kind.</li>
+        <li><b>Your current balance.</b> No screen shows one, no field stores one.</li>
+      </ol>
+    </div>
+    <div class="include" style="border-left-color:var(--blue);margin-top:16px">
+      <div class="eyebrow">What you do type in</div>
+      <ol>
+        <li><b>Last four digits</b> of each card, so you can tell them apart.</li>
+        <li><b>Statement dates</b> &mdash; the day anchors your issuer prints, so the app can count float.</li>
+        <li><b>Static card facts</b> you choose to record &mdash; annual fee, credit limit, rewards category &mdash; the same facts printed on your card&rsquo;s own terms page.</li>
+        <li><b>A typed statement balance</b>, only if and when you type one in, dated to when you typed it.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <h2>The one network call the app makes</h2>
+    <p class="sec-lead">SwipeThisCard periodically fetches a read-only catalog of public card-rewards data (categories, published rates, sign-up terms) so common cards fill themselves in. That request carries no information about you or your cards &mdash; it only downloads the catalog. Everything else in the app works fully offline.</p>
+  </section>
+
+  <section>
+    <h2>What this website collects</h2>
+    <p class="sec-lead">This site is a set of static pages. It does not run analytics, does not set tracking cookies, and does not fingerprint your browser.</p>
+    <p class="sec-lead" style="margin-top:14px">The two buttons inviting you to join the TestFlight beta or ask to be told at launch open a pre-addressed email in your own mail app. If you send that email, your address and whatever you write land in our support mailbox at <a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a> and go onto a plain list we keep ourselves &mdash; used only to reply, to invite you to the beta, or to tell you when the app ships. We do not sell it, rent it, or hand it to an advertising or analytics company, and we do not use it to work out anything else about you. Ask us to delete it and it is gone the same day. [If a hosted sign-up form replaces the email links, this section will be rewritten to name the service that processes the address before that form goes live.]</p>
+  </section>
+
+  <section>
+    <h2>Who else sees anything</h2>
+    <ul class="facts" style="margin-top:4px">
+      <li><svg viewBox="0 0 16 16" fill="none" stroke="#0072B2" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="10" height="6.6" rx="1.8"/><path d="M5.4 7V5.2a2.6 2.6 0 015.2 0V7" stroke-linecap="round"/></svg><span><b>Apple</b> &mdash; iCloud sync (if you turn it on) and App Store purchases are handled entirely by Apple, under Apple&rsquo;s own privacy terms. We never see your iCloud data or your payment details.</span></li>
+      <li><svg viewBox="0 0 16 16" fill="none" stroke="#0072B2" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="8" r="6.8"/><path d="M4.8 8.2l2.2 2.2 4.2-4.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Our hosting provider</b> &mdash; like any website, ordinary server logs (IP address, browser type, page requested) are kept briefly for security and reliability, and are not linked to anything you type into the app.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p class="sec-lede sec-lead">SwipeThisCard is not directed at children and is not meant for anyone under the age Apple&rsquo;s own App Store terms require for holding a card of their own.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p class="sec-lead">If this policy changes, the date at the top of this page will change with it. Material changes will be called out in the app&rsquo;s release notes.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p class="sec-lead">Questions about this policy, or a request to delete an email address we hold: <a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a>.</p>
+  </section>
+
+</div>
+<footer><div class="wrap"><div class="foot-in">
+  <div>
+    <div class="foot-links" style="margin-bottom:14px">
+      <a href="/">Home</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a>
+    </div>
+    <p class="legal">SwipeThisCard is an educational tool for understanding credit-card billing cycles. It is not financial advice, and it does not recommend borrowing, spending, or any particular card. Your statement is always the authority.</p>
+  </div>
+  <div>
+    <p class="legal">Card names and issuer names are trademarks of their respective owners, used here only to identify those products. SwipeThisCard is not affiliated with, endorsed by, or sponsored by any issuer.</p>
+    <p style="margin-top:12px">&copy; 2027 SwipeThisCard</p>
+  </div>
+</div></div></footer>
+</body>
+</html>
