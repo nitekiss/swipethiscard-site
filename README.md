@@ -39,9 +39,5 @@ project exists, via the CNAME/A records shown in Vercel's
 
 ## Still open
 
-- `og-image.jpg` (1200×630 social-share card) — not built yet; `index.html`
-  currently ships with no `og:image`/`twitter:image` tags.
-- `hello@swipethiscard.com` — every sign-up link on the landing page points
-  here; needs to exist before the page goes live.
 - Privacy/Terms bracketed placeholders — need Mehmet's word on legal entity
   name, jurisdiction, and effective date before the draft banner comes off.
