@@ -191,7 +191,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--ash);fon
 
   <section>
     <h2>The one network call the app makes</h2>
-    <p class="sec-lead">SwipeThisCard periodically fetches a read-only catalog of public card-rewards data (categories, published rates, sign-up terms) so common cards fill themselves in. That request carries no information about you or your cards &mdash; it only downloads the catalog. Everything else in the app works fully offline.</p>
+    <p class="sec-lead">At most once a day, and only while you have the app open, SwipeThisCard checks a public file of card facts (published rates, annual fees and reward categories) at <a href="https://swipethiscard.app/catalog/v1/manifest.json"><b>swipethiscard.app/catalog/v1/manifest.json</b></a>, and downloads the catalog beside it only when there is a newer one. The request carries nothing about you or your cards, the files are signed so the app ignores anything we did not publish, and you can open both in any browser. You can switch this off in the app under <b>Privacy and data &rarr; Keep card facts up to date</b>. Everything else in the app works fully offline.</p>
   </section>
 
   <section>
@@ -204,7 +204,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--ash);fon
     <h2>Who else sees anything</h2>
     <ul class="facts" style="margin-top:4px">
       <li><svg viewBox="0 0 16 16" fill="none" stroke="#0072B2" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="10" height="6.6" rx="1.8"/><path d="M5.4 7V5.2a2.6 2.6 0 015.2 0V7" stroke-linecap="round"/></svg><span><b>Apple</b> &mdash; iCloud sync (if you turn it on) and App Store purchases are handled entirely by Apple, under Apple&rsquo;s own privacy terms. We never see your iCloud data or your payment details.</span></li>
-      <li><svg viewBox="0 0 16 16" fill="none" stroke="#0072B2" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="8" r="6.8"/><path d="M4.8 8.2l2.2 2.2 4.2-4.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Our hosting provider</b> &mdash; like any website, ordinary server logs (IP address, browser type, page requested) are kept briefly for security and reliability, and are not linked to anything you type into the app.</span></li>
+      <li><svg viewBox="0 0 16 16" fill="none" stroke="#0072B2" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="8" r="6.8"/><path d="M4.8 8.2l2.2 2.2 4.2-4.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Our hosting providers</b> &mdash; this website and the card facts file are served by ordinary web hosts, which, like any website, keep brief server logs (IP address, browser type, file requested) for security and reliability. Those logs are not linked to anything you type into the app.</span></li>
     </ul>
   </section>
 
