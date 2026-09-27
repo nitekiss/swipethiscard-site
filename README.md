@@ -14,6 +14,10 @@ app's own privacy stance.
   placeholders (legal entity name, jurisdiction, effective date) and a
   visible "not yet in effect" notice until those are filled in.
 - **`terms.html`** — served at `/terms`. Same draft status as privacy.
+- **`fonts/`** — Archivo and IBM Plex Mono, self-hosted (OFL 1.1, licences
+  beside them) and declared in `fonts/fonts.css`, so a visit reaches no host
+  but ours. The Privacy Policy (§9) says so; keep it true — no Google Fonts,
+  CDNs or third-party scripts.
 - **`favicon.svg`** — the nav/footer brand mark, reused as the tab icon.
 - **`robots.txt`** / **`sitemap.xml`** — crawler directives + sitemap.
 - **`vercel.json`** — `cleanUrls: true` so `/support`, `/privacy`, `/terms`
@@ -32,10 +36,10 @@ HTML directly and commit.
 
 ## Domain
 
-`swipethiscard.com` is registered and on Cloudflare nameservers. DNS has no
-records yet — point it at the Vercel project (apex + `www`) once the
-project exists, via the CNAME/A records shown in Vercel's
-**Settings → Domains**.
+`swipethiscard.com` is registered, on Cloudflare nameservers, and live on
+Vercel: `www` serves the site and the apex 308-redirects to it (check with
+`curl -sL`). The card-facts catalog lives separately on Cloudflare Pages at
+`swipethiscard.app/catalog/v1/`.
 
 ## Still open
 

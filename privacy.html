@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Privacy Policy — SwipeThisCard</title>
-<meta name="description" content="How SwipeThisCard and swipethiscard.com handle data: no accounts, no bank connection, no server-side storage of card data, and what the website itself collects.">
+<meta name="description" content="How SwipeThisCard and swipethiscard.com handle information: no account, no tracking, your cards on your device and in your own iCloud, and the one public file the app checks.">
 <link rel="canonical" href="https://swipethiscard.com/privacy">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Privacy Policy — SwipeThisCard">
-<meta property="og:description" content="How SwipeThisCard and swipethiscard.com handle data: no accounts, no bank connection, no server-side storage of card data, and what the website itself collects.">
+<meta property="og:description" content="How SwipeThisCard and swipethiscard.com handle information: no account, no tracking, your cards on your device and in your own iCloud, and the one public file the app checks.">
 <meta property="og:url" content="https://swipethiscard.com/privacy">
 <meta property="og:image" content="https://swipethiscard.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -17,9 +17,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://swipethiscard.com/og-image.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
 <style>
 :root{
   --ink:#0D1B2A; --ink-2:#14273A;
@@ -127,6 +126,14 @@ footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--ash);fon
 .foot-links a{color:var(--text-2);text-decoration:none}
 .foot-links a:hover{color:var(--accent)}
 .legal{max-width:62ch;line-height:1.55}
+/* terms body */
+.tx{max-width:66ch;margin-top:10px;color:var(--text-2)}
+.tx a,.tx-list a{overflow-wrap:anywhere}
+.tx-list{max-width:66ch;margin:12px 0 0;padding-left:20px;display:grid;gap:10px;color:var(--text-2)}
+.tx-list b,.tx b{color:var(--text);font-weight:600}
+.terms section{padding:40px 0}
+.include h3{color:var(--text)}
+.include .tx{font-size:15px}
 </style>
 </head>
 <body>
@@ -145,84 +152,140 @@ footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--ash);fon
     <div class="eyebrow">Privacy</div>
     <h1 style="max-width:20ch">Privacy Policy</h1>
     <p class="sm" style="margin-top:10px">Last updated: [effective date] &middot; Applies to the SwipeThisCard app and this website.</p>
+    <p class="tx" style="margin-top:18px">This policy explains what the SwipeThisCard app and swipethiscard.com handle, where it goes, and what you can do about it. &ldquo;We&rdquo; and &ldquo;us&rdquo; means Tessvane LLC, the company that makes SwipeThisCard. This policy is part of our <a href="/terms">Terms of Service</a>.</p>
   </div>
 </div>
 <div class="wrap">
   <div class="strip" style="margin:0 0 8px;background:var(--surface);color:var(--text);border:1px solid var(--line)">
     <div class="eyebrow" style="color:var(--verm)">Draft &mdash; not yet in effect</div>
-    <p style="color:var(--text-2);margin-top:8px">This page has not been reviewed by counsel and is not the live policy. Bracketed items still need a decision: the legal entity name, the jurisdiction for disputes, and the effective date. Do not treat this as binding until those are filled in and this notice is removed.</p>
+    <p style="color:var(--text-2);margin-top:8px">Three things are still to be filled in: the state the company is registered in, confirmation of the company&rsquo;s name once it is formed, and the effective date. Until they are and this notice is removed, this page is not the live policy.</p>
   </div>
 </div>
-<div class="wrap">
-
+<div class="wrap terms">
   <section style="border-top:0;padding-top:36px">
-    <h2>The short version</h2>
-    <p class="sec-lead">SwipeThisCard was built so there would be nothing here to write. There is no account, no server, and no tracking in the app. This policy exists mainly to say that plainly, and to cover the one thing on this website that does collect something: an email address, if you ask us for one.</p>
-    <div class="pillrow">
-      <span class="pill">No accounts</span>
-      <span class="pill">No bank connection</span>
-      <span class="pill">No analytics SDKs</span>
-      <span class="pill">No ad trackers</span>
-      <span class="pill">No data sold, ever</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>What the app stores</h2>
-    <p class="sec-lead">Everything you enter into SwipeThisCard stays on your device and, if you have iCloud enabled, syncs through your own private iCloud account &mdash; the same way Notes or Reminders does. We do not operate a server that receives, stores, or can read this data.</p>
-    <div class="include">
-      <div class="eyebrow" style="color:var(--verm)">Never collected, under any circumstance</div>
-      <ol>
-        <li><b>Full card numbers, CVVs, or PINs.</b> The app never asks for one.</li>
-        <li><b>Bank logins or account credentials.</b> There is no bank connection of any kind.</li>
-        <li><b>Your current balance.</b> No screen shows one, no field stores one.</li>
-      </ol>
-    </div>
-    <div class="include" style="border-left-color:var(--blue);margin-top:16px">
-      <div class="eyebrow">What you do type in</div>
-      <ol>
-        <li><b>Last four digits</b> of each card, so you can tell them apart.</li>
-        <li><b>Statement dates</b> &mdash; the day anchors your issuer prints, so the app can count float.</li>
-        <li><b>Static card facts</b> you choose to record &mdash; annual fee, credit limit, rewards category &mdash; the same facts printed on your card&rsquo;s own terms page.</li>
-        <li><b>A typed statement balance</b>, only if and when you type one in, dated to when you typed it.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section>
-    <h2>The one network call the app makes</h2>
-    <p class="sec-lead">At most once a day, and only while you have the app open, SwipeThisCard checks a public file of card facts (published rates, annual fees and reward categories) at <a href="https://swipethiscard.app/catalog/v1/manifest.json"><b>swipethiscard.app/catalog/v1/manifest.json</b></a>, and downloads the catalog beside it only when there is a newer one. The request carries nothing about you or your cards, the files are signed so the app ignores anything we did not publish, and you can open both in any browser. You can switch this off in the app under <b>Privacy and data &rarr; Keep card facts up to date</b>. Everything else in the app works fully offline.</p>
-  </section>
-
-  <section>
-    <h2>What this website collects</h2>
-    <p class="sec-lead">This site is a set of static pages. It does not run analytics, does not set tracking cookies, and does not fingerprint your browser.</p>
-    <p class="sec-lead" style="margin-top:14px">The two buttons inviting you to join the TestFlight beta or ask to be told at launch open a pre-addressed email in your own mail app. If you send that email, your address and whatever you write land in our support mailbox at <a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a> and go onto a plain list we keep ourselves &mdash; used only to reply, to invite you to the beta, or to tell you when the app ships. We do not sell it, rent it, or hand it to an advertising or analytics company, and we do not use it to work out anything else about you. Ask us to delete it and it is gone the same day. [If a hosted sign-up form replaces the email links, this section will be rewritten to name the service that processes the address before that form goes live.]</p>
-  </section>
-
-  <section>
-    <h2>Who else sees anything</h2>
-    <ul class="facts" style="margin-top:4px">
-      <li><svg viewBox="0 0 16 16" fill="none" stroke="#0072B2" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="10" height="6.6" rx="1.8"/><path d="M5.4 7V5.2a2.6 2.6 0 015.2 0V7" stroke-linecap="round"/></svg><span><b>Apple</b> &mdash; iCloud sync (if you turn it on) and App Store purchases are handled entirely by Apple, under Apple&rsquo;s own privacy terms. We never see your iCloud data or your payment details.</span></li>
-      <li><svg viewBox="0 0 16 16" fill="none" stroke="#0072B2" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="8" r="6.8"/><path d="M4.8 8.2l2.2 2.2 4.2-4.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Our hosting providers</b> &mdash; this website and the card facts file are served by ordinary web hosts, which, like any website, keep brief server logs (IP address, browser type, file requested) for security and reliability. Those logs are not linked to anything you type into the app.</span></li>
+    <h2>1. The short version</h2>
+    <ul class="tx-list">
+      <li><b>No account.</b> There is nothing to sign up for. We don&rsquo;t know who you are unless you email us.</li>
+      <li><b>What you type stays yours.</b> It lives on your device and, when you&rsquo;re signed in to iCloud, in your own private iCloud account. We run no server that stores it, and we cannot see it.</li>
+      <li><b>No tracking.</b> No analytics, no advertising and no third-party code in the app. No cookies on this website.</li>
+      <li><b>Nothing sold, nothing shared.</b> We never sell or share information about you.</li>
+      <li><b>One thing goes out on its own.</b> At most once a day, the app checks a public file of card facts. It sends nothing you typed, and you can switch it off.</li>
     </ul>
   </section>
-
   <section>
-    <h2>Children</h2>
-    <p class="sec-lede sec-lead">SwipeThisCard is not directed at children and is not meant for anyone under the age Apple&rsquo;s own App Store terms require for holding a card of their own.</p>
+    <h2>2. What you type into the app</h2>
+    <p class="tx">SwipeThisCard knows only what you type into it:</p>
+    <ul class="tx-list">
+      <li>The <b>last four digits</b> of each card, so you can tell your cards apart.</li>
+      <li>The card&rsquo;s <b>issuer and product</b>, and whether it is a personal card or belongs to a company you name.</li>
+      <li>The <b>day each statement closes and each payment comes due</b>, whether the card is on auto-pay, and whether you&rsquo;re paying interest on it.</li>
+      <li><b>Facts about the card</b> you choose to record, such as its rewards and bonus categories, annual fee, foreign transaction fee, credit limit, expiration and any promotional end date.</li>
+      <li>Whether the card is <b>with you</b> and set up for tap to pay.</li>
+      <li><b>Each statement&rsquo;s balance</b>, only if you choose to type it in, dated to that statement, and whether you&rsquo;ve marked it paid.</li>
+      <li>Your <b>settings</b>, such as reminders, widgets and appearance, and any note you add to a reminder.</li>
+    </ul>
+    <p class="tx">The app never asks for a full card number, a security code, a PIN, a bank login or your current balance, and there is nowhere in it to type one. It has no connection to your bank or your card issuer.</p>
   </section>
-
   <section>
-    <h2>Changes to this policy</h2>
-    <p class="sec-lead">If this policy changes, the date at the top of this page will change with it. Material changes will be called out in the app&rsquo;s release notes.</p>
+    <h2>3. Where it lives</h2>
+    <p class="tx">On your device, in the app&rsquo;s own storage, protected by your device&rsquo;s passcode and encryption. When you&rsquo;re signed in to iCloud, the app also keeps a copy in the private database of your own iCloud account, so your cards appear on your other devices. Apple holds that copy under your Apple Account and Apple&rsquo;s own privacy policy; we have no access to it. To keep your cards on one device only, turn SwipeThisCard off in your device&rsquo;s iCloud settings.</p>
+    <p class="tx">The app&rsquo;s widgets, reminders and Siri answers read the same information on your device. They don&rsquo;t send it anywhere.</p>
   </section>
-
   <section>
-    <h2>Contact</h2>
-    <p class="sec-lead">Questions about this policy, or a request to delete an email address we hold: <a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a>.</p>
+    <h2>4. What leaves your device, and when</h2>
+    <p class="tx">Only these, and nothing else:</p>
+    <ul class="tx-list">
+      <li><b>The card-facts check.</b> At most once a day, and only while the app is open, SwipeThisCard checks a public file of card facts &mdash; published rates, fees, rewards and benefits &mdash; at <a href="https://swipethiscard.app/catalog/v1/manifest.json">swipethiscard.app/catalog/v1/manifest.json</a>, and downloads the catalog beside it only when there is a newer one. The request carries nothing you typed and nothing of ours that could identify you: no account, no device ID, no cookie. Like any web request, it shows the host your internet (IP) address and the details your device adds to every request on its own: the app&rsquo;s name and build, the system&rsquo;s version, and your preferred languages. The files are signed, so the app ignores anything we didn&rsquo;t publish, and you can open both in any browser. Switch the check off in the app under <b>Settings &rsaquo; Privacy and data &rsaquo; Keep card facts up to date</b>; everything else works offline.</li>
+      <li><b>iCloud</b>, when you&rsquo;re signed in: between your devices and your own iCloud account, through Apple.</li>
+      <li><b>Purchases</b>, through Apple (section 6).</li>
+      <li><b>An email to us</b>, only if you send one (section 8).</li>
+      <li><b>An export</b>, only where you send it (section 7).</li>
+      <li><b>A web page you choose to open</b>, such as an issuer&rsquo;s page from a card&rsquo;s details. That site sees your visit under its own privacy policy. The app adds nothing about you to the link.</li>
+      <li><b>A calendar event you add.</b> Adding a due date to your calendar saves the card&rsquo;s name, its last four digits, the date and your note in your own calendar, which syncs wherever that calendar does, such as iCloud, Google or Exchange.</li>
+      <li><b>Siri, Shortcuts and Control Center</b>, when you use them: Apple handles the request under its own privacy policy, and the app answers from what is on your device.</li>
+    </ul>
   </section>
-
+  <section>
+    <h2>5. Reminders, widgets, Siri and Face ID</h2>
+    <p class="tx">Reminders are scheduled by iOS on your device; no server of ours sends them. Reminders, widgets and Siri can show or say a card&rsquo;s name, its last four digits and a company name you gave it &mdash; never an amount &mdash; where others might see or hear them, such as on your Lock Screen. You decide how much they show in the app under <b>Settings &rsaquo; Widgets</b>, and in your device&rsquo;s own notification settings.</p>
+    <p class="tx">Face ID Lock is off unless you turn it on. When it&rsquo;s on, iOS checks your face, fingerprint or passcode and tells the app only whether it matched; the app never receives your face or fingerprint data. The lock covers the app and Siri&rsquo;s answers, but not widgets or reminders, which follow the switches above.</p>
+  </section>
+  <section>
+    <h2>6. Purchases</h2>
+    <p class="tx">Apple sells and bills Unlimited Cards. We never see your name, your Apple Account, your payment details or your address. The app asks Apple, on your device, whether you have an active purchase, and keeps the answer on your device. Apple gives us sales and subscription reports that do not identify you. Apple&rsquo;s privacy policy covers what Apple does with your purchase.</p>
+  </section>
+  <section>
+    <h2>7. Your export</h2>
+    <p class="tx">The app can save your cards as a CSV file: dates, statuses and card facts, including credit limits and company names, but never card numbers, security codes or balances. Once you save or share it, it&rsquo;s your file, and wherever you put it, that place&rsquo;s terms apply. Keep it somewhere safe.</p>
+  </section>
+  <section>
+    <h2>8. When you contact us</h2>
+    <p class="tx">Contact Support in the app writes your message and hands it to your own mail app; nothing is sent until you send it yourself. It adds a short technical note you can read, change or delete first: app version, iOS version, device model, number of cards, your plan, and the screen you came from. It never adds your card details. If your device has no mail account set up, the app copies the message for you to paste into another mail app.</p>
+    <p class="tx">Email to <a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a> is kept in our mailbox, hosted by Google Workspace. We use it only to answer you and to fix what you report.</p>
+  </section>
+  <section>
+    <h2>9. This website</h2>
+    <p class="tx">swipethiscard.com is a set of plain pages hosted by Vercel. It sets no cookies, runs no analytics, shows no ads, and loads nothing from any other company. Like any web host, Vercel keeps short-lived server logs &mdash; internet address, browser type, page requested &mdash; for security and reliability. We don&rsquo;t use them to identify anyone.</p>
+    <p class="tx">The buttons to join the beta or to hear when the app launches open an email in your own mail app. If you send it, we keep your address on a list of our own and use it only to invite you to the beta or to tell you when the app ships. No mailing service and no tracking pixels. If that ever changes, this policy changes first.</p>
+  </section>
+  <section>
+    <h2>10. If you test a beta</h2>
+    <p class="tx">Beta versions come through Apple&rsquo;s TestFlight. Apple shares with us the name and email address you were invited under, when you installed each build and how often you&rsquo;ve opened it, and, if you choose to send them, your feedback, screenshots and crash reports with your device details.</p>
+    <p class="tx">We also keep a short list of testers: your first name, country, email, roughly how many cards you carry, whether you have business cards, the devices you test on, the dates we invited you and heard from you, and the offer code for your free year. If you choose to tell us you are colorblind, we note that too, because the app is built for colorblind cardholders and we want it tested by them. We delete the list once every tester&rsquo;s free year has been issued and the beta is over, keeping only the emails of testers who asked to hear about launches.</p>
+  </section>
+  <section>
+    <h2>11. Crash reports Apple shares with us</h2>
+    <p class="tx">If you&rsquo;ve chosen in your device&rsquo;s settings to share analytics with app developers, Apple may send us crash reports and summary usage figures. They don&rsquo;t identify you to us. You can change that in <b>Settings &rsaquo; Privacy &amp; Security &rsaquo; Analytics &amp; Improvements</b>. The app itself contains no crash reporter and no analytics code.</p>
+  </section>
+  <section>
+    <h2>12. Who else is involved</h2>
+    <p class="tx">Four companies play a part, each under its own privacy terms and only for the job named:</p>
+    <ul class="tx-list">
+      <li><b>Apple</b> &mdash; the App Store, purchases, iCloud, TestFlight, Siri, reminders and Face ID.</li>
+      <li><b>Cloudflare</b> &mdash; serves the public card-facts files.</li>
+      <li><b>Vercel</b> &mdash; hosts this website.</li>
+      <li><b>Google Workspace</b> &mdash; hosts our email.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>13. What we never do</h2>
+    <p class="tx">We never sell or share information about you, show you ads, or track you across other companies&rsquo; apps or websites; the app never asks for permission to track you. We don&rsquo;t buy information about you, combine what we hold with other sources, or use it to profile you or make automated decisions about you. And the app will never start sending anything new about you without saying so in the app first.</p>
+  </section>
+  <section>
+    <h2>14. How long things are kept</h2>
+    <ul class="tx-list">
+      <li><b>What you typed in the app.</b> We never hold it. It stays until you delete it: a card with its history, from inside the app; everything on a device, by deleting the app; and the iCloud copy, from your device&rsquo;s iCloud storage settings.</li>
+      <li><b>Email.</b> As long as we need it to help you and keep a record of what we told you. Ask and we delete it, unless the law or a live dispute requires us to keep it.</li>
+      <li><b>The launch list.</b> Until you ask to leave it.</li>
+      <li><b>The beta list.</b> As section 10 says.</li>
+      <li><b>Host logs.</b> Kept by Vercel and Cloudflare for their own short periods. We don&rsquo;t copy them.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>15. Your choices and rights</h2>
+    <p class="tx">Wherever you live, you can ask us what we hold about you, to correct it, to delete it, or for a copy. For most cardholders the answer is nothing: what you typed in the app is already in your hands, and the export gives you a copy. If you have emailed us, or joined the beta or the launch list, write to <a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a> from the same address and we will act within 30 days. Someone else may ask for you with your written permission. We will never treat you differently for asking.</p>
+    <p class="tx">We don&rsquo;t sell or share personal information, so there is nothing to opt out of. This website tracks no one, so it treats every visit the same, with or without a Do Not Track or Global Privacy Control signal. If you are in the European Union or the United Kingdom, we rely on your consent for the launch and beta lists (you can withdraw it at any time), and on our legitimate interest in answering you and keeping this site secure; you may also complain to your local data protection authority.</p>
+  </section>
+  <section>
+    <h2>16. Security</h2>
+    <p class="tx">Your card information stays behind your own passcode, Face ID and Apple Account. Because we never hold it, a breach on our side cannot expose it. The card-facts files are signed, so the app ignores any file we did not publish. The little we do hold &mdash; email and the lists above &mdash; sits in accounts only we can reach. No system is perfect: if a breach ever affects information we hold, we will tell you as the law requires.</p>
+  </section>
+  <section>
+    <h2>17. Children</h2>
+    <p class="tx">SwipeThisCard is for adults 18 and older and is not directed at children. If we learn that we hold a child&rsquo;s information, such as an email, we delete it.</p>
+  </section>
+  <section>
+    <h2>18. Where information is handled</h2>
+    <p class="tx">We are a US company. Our email and this website are run from the United States, and the card-facts files are served from Cloudflare&rsquo;s servers around the world. If you write to us from outside the US, your email is handled in the US.</p>
+  </section>
+  <section>
+    <h2>19. Changes to this policy</h2>
+    <p class="tx">The date at the top of this page shows the current version. If a change matters &mdash; to what leaves your device, what we hold, or your rights &mdash; we&rsquo;ll say so in the app before it takes effect.</p>
+  </section>
+  <section>
+    <h2>20. Contact</h2>
+    <p class="tx">Questions about this policy, or a request about information we hold: <a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a>. Tessvane LLC, [State].</p>
+  </section>
 </div>
 <footer><div class="wrap"><div class="foot-in">
   <div>
