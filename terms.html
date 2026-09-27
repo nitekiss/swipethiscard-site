@@ -127,6 +127,14 @@ footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--ash);fon
 .foot-links a{color:var(--text-2);text-decoration:none}
 .foot-links a:hover{color:var(--accent)}
 .legal{max-width:62ch;line-height:1.55}
+/* terms body */
+.tx{max-width:66ch;margin-top:10px;color:var(--text-2)}
+.tx a{overflow-wrap:anywhere}
+.tx-list{max-width:66ch;margin:12px 0 0;padding-left:20px;display:grid;gap:10px;color:var(--text-2)}
+.tx-list b,.tx b{color:var(--text);font-weight:600}
+.terms section{padding:40px 0}
+.include h3{color:var(--text)}
+.include .tx{font-size:15px}
 </style>
 </head>
 <body>
@@ -145,66 +153,103 @@ footer{border-top:1px solid var(--line);padding:36px 0 56px;color:var(--ash);fon
     <div class="eyebrow">Terms</div>
     <h1 style="max-width:20ch">Terms of Service</h1>
     <p class="sm" style="margin-top:10px">Last updated: [effective date] &middot; Applies to the SwipeThisCard app and this website.</p>
+    <p class="tx" style="margin-top:18px">These terms are an agreement between you and Tessvane LLC (&ldquo;we&rdquo;, &ldquo;us&rdquo;), the company that makes SwipeThisCard. They cover the SwipeThisCard app and swipethiscard.com. By using either one you agree to them and to our <a href="/privacy">Privacy Policy</a>. If you don&rsquo;t agree, please don&rsquo;t use them.</p>
   </div>
 </div>
 <div class="wrap">
   <div class="strip" style="margin:0 0 8px;background:var(--surface);color:var(--text);border:1px solid var(--line)">
     <div class="eyebrow" style="color:var(--verm)">Draft &mdash; not yet in effect</div>
-    <p style="color:var(--text-2);margin-top:8px">This page has not been reviewed by counsel and is not the live policy. Bracketed items still need a decision: the legal entity name, the jurisdiction for disputes, and the effective date. Do not treat this as binding until those are filled in and this notice is removed.</p>
+    <p style="color:var(--text-2);margin-top:8px">Three things are still to be filled in: the state whose law governs these terms, confirmation of the company&rsquo;s name once it is formed, and the effective date. Until they are and this notice is removed, this page is not binding.</p>
   </div>
 </div>
-<div class="wrap">
-
+<div class="wrap terms">
   <section style="border-top:0;padding-top:36px">
     <h2>1. What SwipeThisCard is</h2>
-    <p class="sec-lead">SwipeThisCard is an educational tool that helps you keep track of the interest-free window each card in your wallet gives you on a purchase, based on the dates and facts you type in yourself. It does not connect to a bank, does not know your real balance, and does not place any purchase, transfer, or payment on your behalf.</p>
+    <p class="tx">SwipeThisCard is an educational tool. It ranks the credit cards you already hold by the interest-free days each one gives on a purchase made today, calculated from the dates you type in, and it shows facts about those cards as their issuers publish them. It never asks for your card number, never connects to your bank, never sees or shows your current balance, and never makes a purchase, transfer, or payment for you.</p>
   </section>
-
   <section>
     <h2>2. Not financial advice</h2>
-    <p class="sec-lead">Nothing in the app or on this site is financial, credit, or investment advice, and none of it recommends that you spend, borrow, or open any particular card or account. Figures shown are calculations from what you typed in, not a prediction, an offer, or a guarantee. Your card issuer&rsquo;s own statement is always the final authority on what you owe and when.</p>
+    <p class="tx">Nothing in the app or on this site is financial, credit, tax, or investment advice. We are not a lender, a broker, or an adviser, and nothing we show is an offer of credit. The app ranks cards you already hold; it does not recommend that you borrow, spend, carry a balance, or open or close any card or account. Every figure is a calculation from what you entered, not a prediction or a guarantee. Your card issuer&rsquo;s statement is always the final authority on what you owe and when it is due.</p>
   </section>
-
   <section>
-    <h2>3. Accuracy is on you</h2>
-    <p class="sec-lead">The app calculates from the dates and facts you enter. If your issuer changes a due date, a rate, or a fee, the app has no way to find out on its own &mdash; there is no bank connection to check against. Keeping what you&rsquo;ve entered current is your responsibility; the app will say so wherever it matters.</p>
+    <h2>3. What you type in</h2>
+    <p class="tx">The app calculates from the dates and facts you enter &mdash; statement closing days, due dates, and the rest. It has no connection to your accounts, so if your issuer moves a closing date or a due date, or changes your account&rsquo;s terms, the app learns of it only when you update it. Keeping what you entered current, and checking it against your statement, is your responsibility. The app says so wherever it matters.</p>
   </section>
-
   <section>
-    <h2>4. Your data</h2>
-    <p class="sec-lead">What you enter stays on your device and, if enabled, in your own private iCloud account. We do not operate a server that stores it and cannot access it. Full detail is in the <a href="/privacy">Privacy Policy</a>.</p>
+    <h2>4. Card details we publish</h2>
+    <p class="tx">Alongside what you type in, SwipeThisCard shows facts about each card &mdash; rates, fees, rewards and benefits &mdash; as its issuer publishes them. The same words appear in the app wherever those facts are read:</p>
+    <div class="include">
+      <h3>Card details come from the issuers, and we do our best.</h3>
+      <p class="tx">Every card fact in SwipeThisCard is read from the issuer&rsquo;s own pages and agreements, dated, and re-checked regularly. We keep it as current and as accurate as we can, to the best of our knowledge &mdash; but issuers change terms, and a page can be out of date before we see it.</p>
+      <p class="tx">SwipeThisCard makes no warranty that any card detail is complete or current, and accepts no liability for decisions made on it. <b>Always confirm rates, fees and terms with your issuer before you rely on them.</b></p>
+    </div>
+    <p class="tx" style="margin-top:18px">The app checks for an updated file of these published facts at most once a day. Nothing about you is sent with that check, and you can switch it off in Settings. Wherever this website shows card details, the same applies.</p>
   </section>
-
   <section>
-    <h2>5. Purchases and subscriptions</h2>
-    <p class="sec-lead">Paid tiers and the one-time purchase are sold and billed entirely through Apple&rsquo;s App Store, under Apple&rsquo;s own Media Services Terms and Conditions. Apple handles payment, renewal, and refunds; we do not receive or store your payment details, and refund requests go through Apple, not us.</p>
+    <h2>5. Reminders, widgets and Siri</h2>
+    <p class="tx">Reminders, notifications, widgets and Siri answers are conveniences. They depend on your device, its settings and its operating system, and on the dates you entered, and they can arrive late or not at all. Don&rsquo;t rely on them as your only reminder to pay on time.</p>
   </section>
-
   <section>
-    <h2>6. Trademarks</h2>
-    <p class="sec-lead">Card and issuer names shown in the app and on this site are trademarks of their respective owners, used only to identify those products. SwipeThisCard is not affiliated with, endorsed by, or sponsored by any card issuer or network.</p>
+    <h2>6. Your data</h2>
+    <p class="tx">What you enter stays on your device and, if you turn on iCloud, in your own private iCloud account. We run no server that stores it, and we cannot see it, recover it, or restore it for you. If you delete the app without iCloud turned on, or lose your device, what you entered may be gone for good &mdash; the app&rsquo;s export is there so you can keep a copy of your own. Full detail is in the <a href="/privacy">Privacy Policy</a>.</p>
   </section>
-
   <section>
-    <h2>7. Age</h2>
-    <p class="sec-lead">You must meet the minimum age Apple&rsquo;s App Store terms require to hold a payment card of your own in order to use SwipeThisCard.</p>
+    <h2>7. Free, Unlimited Cards, and purchases</h2>
+    <ul class="tx-list">
+      <li><b>Free.</b> Up to two active cards cost nothing, with no time limit.</li>
+      <li><b>Unlimited Cards.</b> More than two active cards needs Unlimited Cards, sold as a monthly or yearly subscription, or as a one-time Lifetime purchase. Prices are shown in the app and on the App Store before you buy.</li>
+      <li><b>Your free month.</b> A new subscriber&rsquo;s first month is free, once per customer, as Apple determines eligibility. Unless you cancel at least 24 hours before the free month ends, your subscription starts and you are charged.</li>
+      <li><b>Automatic renewal.</b> Payment is charged to your Apple Account when you confirm the purchase. A subscription renews automatically for the same period, at the price then in effect, unless you turn off automatic renewal at least 24 hours before the current period ends; the renewal is charged within the 24 hours before it ends. You can manage or cancel it at any time in your device&rsquo;s Settings, under your name &rsaquo; Subscriptions. Cancelling stops the next renewal; you keep Unlimited Cards until the end of the period you paid for.</li>
+      <li><b>Lifetime.</b> The one-time purchase never renews. It belongs to your Apple Account and comes back on any device signed in to it. It is not shared through Family Sharing.</li>
+      <li><b>If you stop paying.</b> Nothing is deleted. Your cards stay on your device, where you can still see them, export them, archive them or delete them. What stops, until you come back, is the daily ranking, Month, the reminders and the widgets.</li>
+      <li><b>Billing and refunds.</b> Apple sells and bills every purchase under its own Media Services Terms and Conditions. We never see your payment details, and we can&rsquo;t issue refunds &mdash; ask Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+      <li><b>Price changes.</b> If a subscription&rsquo;s price changes, Apple tells you before it takes effect and, where its rules require, asks for your agreement first.</li>
+    </ul>
   </section>
-
   <section>
-    <h2>8. Changes</h2>
-    <p class="sec-lead">We may update these terms as the app changes. The date at the top of this page reflects the current version; continued use after an update means you accept it.</p>
+    <h2>8. Your licence to use the app</h2>
+    <p class="tx">The app is licensed to you, not sold, under Apple&rsquo;s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed Application End User License Agreement</a> (the &ldquo;Standard EULA&rdquo;). These terms add to it; if the two conflict about the licence itself, the Standard EULA wins. Please don&rsquo;t copy, resell, or reverse-engineer the app; don&rsquo;t scrape or bulk-download the card information on this site; and don&rsquo;t use either to break the law or anyone else&rsquo;s rights.</p>
   </section>
-
   <section>
-    <h2>9. Governing law</h2>
-    <p class="sec-lead">[Jurisdiction to be set once the operating entity is formed.]</p>
+    <h2>9. Names and trademarks</h2>
+    <p class="tx">The app and this website, including their text, design and code, belong to Tessvane LLC. Card and issuer names shown in the app and on this site are trademarks of their respective owners, used only to identify those products. SwipeThisCard is not affiliated with, endorsed by, or sponsored by any card issuer or network.</p>
   </section>
-
   <section>
-    <h2>10. Contact</h2>
-    <p class="sec-lead">Questions about these terms: <a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a>.</p>
+    <h2>10. No warranty</h2>
+    <p class="tx"><b>The app, this website and all the information in them are provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo;. To the fullest extent the law allows, we disclaim all warranties, express or implied &mdash; including merchantability, fitness for a particular purpose, accuracy, and non-infringement.</b> We don&rsquo;t promise that anything will be uninterrupted, error-free, complete, or current.</p>
   </section>
-
+  <section>
+    <h2>11. Limits on our liability</h2>
+    <p class="tx"><b>To the fullest extent the law allows, Tessvane LLC is not liable for any interest, late fees, penalty rates, effects on your credit, lost rewards, or any other indirect, incidental, special, or consequential loss arising from your use of the app, this website, or the information in them</b> &mdash; including a ranking, a date, a reminder, or a card detail that turns out to be wrong. <b>Our total liability for any claim is limited to the greater of what you paid for SwipeThisCard in the 12 months before the claim, or US$50.</b> Some places don&rsquo;t allow these limits, so they apply to you only as far as your local law permits.</p>
+  </section>
+  <section>
+    <h2>12. If a claim comes from your misuse</h2>
+    <p class="tx">If you use the app or this site in breach of these terms or the law, and someone brings a claim against us because of it, you agree to cover our reasonable costs of dealing with that claim.</p>
+  </section>
+  <section>
+    <h2>13. Stopping and ending</h2>
+    <p class="tx">You can stop at any time: cancel any subscription through Apple and delete the app. We may change, suspend, or discontinue the app, the card-facts file, or this website, in whole or in part. We may end your licence if you break these terms.</p>
+  </section>
+  <section>
+    <h2>14. Disputes and governing law</h2>
+    <p class="tx">If something goes wrong, email us first at <a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a> and give us 60 days to put it right. If we can&rsquo;t, either of us may bring an individual claim in small-claims court, or otherwise in the state or federal courts located in [State], and you and we agree to those courts. These terms are governed by the laws of [State] and of the United States, without regard to conflict-of-laws rules. Nothing here takes away a right your local consumer-protection law gives you.</p>
+  </section>
+  <section>
+    <h2>15. Changes to these terms</h2>
+    <p class="tx">We may update these terms as the app changes. The date at the top of this page shows the current version. If a change matters &mdash; to what you pay, to your data, or to your rights &mdash; we&rsquo;ll say so in the app before it takes effect. Using SwipeThisCard after that date means you accept the updated terms; if you don&rsquo;t, you can stop at any time.</p>
+  </section>
+  <section>
+    <h2>16. Who can use SwipeThisCard</h2>
+    <p class="tx">You must be 18 or older, or the age of majority where you live if that is higher. SwipeThisCard is made for credit cards issued in the United States.</p>
+  </section>
+  <section>
+    <h2>17. The rest</h2>
+    <p class="tx">These terms, the Standard EULA and our Privacy Policy are the whole agreement between us about SwipeThisCard. If any part is found unenforceable, the rest still applies. If we don&rsquo;t enforce a term straight away, we haven&rsquo;t given it up. We may transfer these terms to a company that takes over SwipeThisCard; you may not transfer them.</p>
+  </section>
+  <section>
+    <h2>18. Contact</h2>
+    <p class="tx">Questions about these terms: <a href="mailto:hello@swipethiscard.com">hello@swipethiscard.com</a>. Tessvane LLC, [State].</p>
+  </section>
 </div>
 <footer><div class="wrap"><div class="foot-in">
   <div>
