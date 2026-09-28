@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://swipethiscard.com/sitemap.xml
+Sitemap: https://www.swipethiscard.com/sitemap.xml
