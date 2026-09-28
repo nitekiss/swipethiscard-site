@@ -10,10 +10,11 @@ app's own privacy stance.
   Apple Watch, per D-170. Includes the Beta sign-up and "tell me when it
   ships" sections.
 - **`support.html`** — served at `/support` (clean URL via `vercel.json`).
-- **`privacy.html`** — served at `/privacy`. **Draft** — carries bracketed
-  placeholders (legal entity name, jurisdiction, effective date) and a
-  visible "not yet in effect" notice until those are filled in.
-- **`terms.html`** — served at `/terms`. Same draft status as privacy.
+- **`privacy.html`** — served at `/privacy`. State (North Carolina) and date
+  filled in 2026-09-27 on Mehmet's word; a visible "not yet in effect" notice
+  stays until Tessvane LLC is formed. When it is: remove the notice and set
+  "Last updated" to that day.
+- **`terms.html`** — served at `/terms`. Same status as privacy.
 - **`fonts/`** — Archivo and IBM Plex Mono, self-hosted (OFL 1.1, licences
   beside them) and declared in `fonts/fonts.css`, so a visit reaches no host
   but ours. The Privacy Policy (§9) says so; keep it true — no Google Fonts,
@@ -43,5 +44,5 @@ Vercel: `www` serves the site and the apex 308-redirects to it (check with
 
 ## Still open
 
-- Privacy/Terms bracketed placeholders — need Mehmet's word on legal entity
-  name, jurisdiction, and effective date before the draft banner comes off.
+- Privacy/Terms "not yet in effect" notice — comes off when Tessvane LLC is
+  formed; set "Last updated" to that day in the same change.
